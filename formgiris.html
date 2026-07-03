@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF=8" />
+    <!--burada utf-8 yazması türkçe karakterleri kullanacağımızı belirtmek için-->
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0" />
+    <!--viewport kısmı html dosyamızın tarayıcıda nasıl görünüceğini demek device-width html dosyasını açan cihazın genişliği ile aynı olsun demek-->
+    <title>HTML dersleri-form giriş</title>
+  </head>
+  <body>
+    <form action="/formun-gidecegi-yer" method="post">
+      <!--form bildiğimiz isim soyisim mail gibi alanlalrı doldurduğumuz gönde ilet butonlarının olduğu alanlardır bu alanda action da bulunan tırnak içinde alana ben bu fromu nereye göndericem burada belirtiyoruz method ilede nasıl gideceğini belirliyoruz-->
+      <label for="">Adınız</label>
+      <input
+        type="text"
+        required
+        placeholder="adınızı giriniz"
+      /><!--kullanıcıdan bir girdi aldığımızda bir data alacağımız zaman aklımıza direk input gelicek hangi programlama dili olursa olsun-->
+      <br />
+      <br />
+      <label for="">Soyadınız</label>
+      <input type="text" />
+      <br />
+      <br />
+      <button type="submit">Gönder</button
+      ><!--buton kullanımı için type sumbit deriz-->
+      <input
+        type="submit"
+        value="Gönder"
+      /><!--type submit diyerek gönderilecek bişey olduğunu belli ettim value de buton ismini verdim button tagı da kullanılabilir bu şekilde de buton oluşturulabilir-->
+    </form>
+    <!--formun gidileceği bir yeri olmadığı için gönder butonlarına tıkladığımızda sayfa açılıyo ama çalışamıyo diyo şöyle birşeu var ben bu inputlara yani giriş taglarının içine required yazarsam adınız alanı zorunlu kılınır adınız kısmını yazmadan gönder butonuna tıklayamam ayrıca placeholder ile ben bu adınız kutusunun içine hafif bir grilik ile adınızı giriniz yazarım üstteki örnekteki gibi -->
+  </body>
+</html>
