@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF=8" />
+    <!--burada utf-8 yazması türkçe karakterleri kullanacağımızı belirtmek için-->
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0" />
+    <!--viewport kısmı html dosyamızın tarayıcıda nasıl görünüceğini demek device-width html dosyasını açan cihazın genişliği ile aynı olsun demek-->
+    <title>HTML dersleri-tablolar</title>
+  </head>
+  <body>
+    <table border="1">
+      <!--table ile tablo oluşturduk tr ile satır td ile elemanları-->
+      <caption>
+        çalışanlar tablosu
+      </caption>
+      <!--tabloya caption ile başlık verilir bu h2 gibi başlık etiketi ilede olabilir ama caption tablo için daha iyi-->
+      <tr>
+        <th>Kimlik</th>
+        <!--th dediğimizde başlıklar kalın yazılır-->
+        <th colspan="2">İsim</th>
+        <!--soy ismi kaldırıp isimi ikilik alana yayarız-->
+        <!-- <th>Soyisim</th> -->
+        <th>Maaşı</th>
+      </tr>
+      <tr>
+        <th>30</th>
+        <td colspan="2">Ahmet</td>
+        <!--colspan yayılma yani ahmetin yazdığı kutu 2 lik bir alan kaplicak yayılıcak colspan sütünda yayıl demek-->
+        <td>Çakır</td>
+        <td>10 TL</td>
+      </tr>
+      <tr>
+        <th>35</th>
+        <td rowspan="2">Gizem</td>
+        <!--rowspan satırda yayıl -->
+        <td>Özel</td>
+        <td>10 TL</td>
+      </tr>
+      <tr>
+        <th>40</th>
+        <td>Mehmet</td>
+        <td>Kum</td>
+        <td>10 TL</td>
+      </tr>
+    </table>
+  </body>
+</html>
