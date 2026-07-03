@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF=8" />
+    <!--burada utf-8 yazması türkçe karakterleri kullanacağımızı belirtmek için-->
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0" />
+    <!--viewport kısmı html dosyamızın tarayıcıda nasıl görünüceğini demek device-width html dosyasını açan cihazın genişliği ile aynı olsun demek-->
+    <title>HTML dersleri-html5 ile gelen yeni özellikler</title>
+  </head>
+  <body>
+    <header>
+      <!--sitem div ile gruplandı her bir alana div içine aldım ama herşeyde div kullanılıyo diye bunu değiştirmişler html5 ile semantik etiketler çıkartmışlar bu div içindekiler sayfada yer alıcak şeylerin en üst kısmını doldurduk bu yüzden header deriz -->
+      <h1>web sitem</h1>
+      <p>ilk web siteme hoşgeldiniz</p>
+    </header>
+    <nav>
+      <!--burası aslında navigasyon kısmı çüünkü içlerine yönlendirme yapacağımız seçenekler koyduk-->
+      <ul>
+        <li><a href="">anasayfa</a></li>
+        <li><a href="">hakkımızda</a></li>
+        <li><a href="">iletişim</a></li>
+      </ul>
+    </nav>
+    <section>
+      <!--bu bölüm aslında yeni bir bölüm ben bu bölümlere section diyebilirim-->
+      <h2>içeriklerim</h2>
+      <article>
+        <!--section içinde makaleler yazdık ben buraya div değilde artık article diyebilirim-->
+        <h4>yazının başlığı</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          dignissimos eum officiis assumenda, aut labore laboriosam et, ducimus
+          minus delectus blanditiis ratione repellat. Dolorem impedit ipsum
+          quaerat fugiat optio vitae!
+        </p>
+      </article>
+      <article>
+        <h4>yazının başlığı</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          dignissimos eum officiis assumenda, aut labore laboriosam et, ducimus
+          minus delectus blanditiis ratione repellat. Dolorem impedit ipsum
+          quaerat fugiat optio vitae!
+        </p>
+      </article>
+    </section>
+    <aside>
+      <!--ilgilenebilirsiniz kısmı genelde sayfa sağında kalır ve ben buraya bu yüzden artık aside diyebilirim-->
+      <h3>ilgilenebilirsiniz</h3>
+      <ul>
+        <li><a href="">en çok okunanlar</a></li>
+        <li><a href="">en popülerler</a></li>
+      </ul>
+    </aside>
+    <footer>
+      <!--tüm haklar saklıdır yazısı hep sayfa altında kalır ben buraya artık bu yüzden footer diyebilirim-->
+      <p>tüm hakları saklıdır</p>
+    </footer>
+  </body>
+</html>
+<!--bu semantik etiketler kullanarak kodun kalitesi artar ve seo yardımcı olur bunların hepsi div olursa hangisi ne anlama geldiğini anlayamayız-->
