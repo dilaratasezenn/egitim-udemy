@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS dersleri arka plan</title>
+    <style>
+      /*image ile internetten resmin adresini kopyalayıp koyduk div içinde gözükmediği için height ile yükseklik vererek resmi net görebiliriz yada backgraound-size=contain diyerek resmi bu diz alanına sığdır dersek resim tam gözükür ama tekrarlar bunun için background-repeat: no-repeat; no repeat diyerek tekrarlama deriz*/
+      div {
+        background-color: red;
+        background-image: url("https://i.pinimg.com/236x/fb/31/25/fb3125091bceab85aeecd8d1d3c36968.jpg");
+        /* height: 100px;*/
+        background-size: contain;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center; /*bu şekildede resmi div de ortala demek*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>KUTU</div>
+  </body>
+</html>
