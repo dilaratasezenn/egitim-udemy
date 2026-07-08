@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS dersleri font tipleri</title>
+    <style>
+      /*google font ile istediğim bir fontun import kısmından css için olan kodu aldım */
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      /*sadece paragrafim etiketine sahip p tagına bu fontu tanımladık her tarayıcı bu font tiplerini desteklemeyebilir veya farklı biyerden font tipi indirilebilir eklenebilir bu font tipinde  ilk Arial kullan yoksa helvetica kullan oda yoksa herhangi bir  sans-serif ailesinden bir font tipi kullan demek sans-serif ise arial ve helvetica nın ailesi  */
+      /*line-height iki satır aralığı boşluğu verir*/
+      /*letter-spacing harfler arası boşluğu verir*/
+      .paragrafim {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        line-height: 2.6;
+        letter-spacing: 2px;
+      }
+      /*monospace bir font ailesi bu sınıf içinden monospace ait fontlardan biri seçilebilir*/
+      /*fontun kalınlığını değiştirir*/
+      .monospace {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .ubuntu {
+        font-family: "Ubuntu", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="paragrafim">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+      repellendus at unde nobis eveniet assumenda alias quibusdam nam,
+      laudantium aspernatur mollitia hic sit nihil, numquam, magni officiis
+      facilis quas deleniti.
+    </p>
+    <p class="monospace">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aliquam
+      corporis voluptatum rem mollitia porro, dolor ad nam illo! Mollitia iusto
+      natus cum suscipit culpa laudantium dolores eum dolorum vel?
+    </p>
+    <p class="ubuntu">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nemo enim
+      doloribus unde quasi repellendus nesciunt rerum assumenda nostrum! Porro
+      cumque dicta fugit animi rem ad quos dolorum ducimus atque!
+    </p>
+  </body>
+</html>
+<!---->
