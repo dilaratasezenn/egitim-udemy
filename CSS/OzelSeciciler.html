@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS dersleri özel seçiciler</title>
+    <style>
+      /*
+      p:first-child {
+        first child ile paragrafın ilkini seçebiliyorum
+        font-weight: bold;
+      }
+      p:last-child {
+        p deki ilk çocuktan sonraki p çocuğu yani last child
+        background-color: red;
+      }*/
+
+      /*li:nth-child(3) {
+        li ul içinde bulunan listelerden nth-child(3) diyerel listedeki 3.öğe için zemin rengini kırmızı yaparım buna nokta atışı seçim gibi
+        background-color: red;
+      }
+      li:nth-child(2) {
+        background-color: blue;
+      }*/
+      /* li:nth-child(odd) {
+        listemdeki çocukların biri giri zemin rengine diğeri normal zemin rengine sahip olsun derken nth-child(odd) çocukları tekli sayılarda gri zemin seç der eğer parantez içine (even) yazmış olsaydım çiftli sayıları seçerdi sayılarda derken listede yukarından aşşağı saydığımızda 1,2,3,4 tekli derken ilki ve üçüncüyü alır çifti derken ikinci ve dördüncü liste elemanını alır
+        background-color: gray;
+      }*/
+
+      /*butonumun zemin rengini kırmızı yaparız ama button:hover dersem imcelim buton üzerine geldiğinde kırmızı olur
+      button:hover {
+        background-color: red;
+      }
+     imcelim input üzerine gelince mavi olucak ama ben tıkladığımda mavi olsun istersem focus yazarım 
+      input:focus {
+        background-color: blue;
+      }*/
+      /*h2 başlığına before yani önce bir eleman ve after sonra bir eleman ekleyebilirim alıntıların afterına kime ait olduğunu belirtmek için kullanılabilir örnek olarak başka şeyler de olabilir
+      h2::before {
+        content: 😀;
+      }
+      h2::after {
+        content: 🥹;
+      }*/
+      p:not(.special) {
+        /*special classın dışında olanları gri yap dedik yani p:not olmayan ne olmayan special classına sahip olmayanları gri yap*/
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    <div>
+      ben bu paragraflara css özelliği verirken p:first-child yani div içindeki ilk çocuğu seç derim buda css de p:firstchild olur div içinde olmasalarda ben bunlara çocuk diyemezdim yani ben css de first child derken divin çocuğu olan p first child diyorum css özelliği verirken ben alt satıra bu div i komple kopyala yapıştır yapsam altına yine aynı özellik oluşur diğer kopya içinde çünkü class ile ayrı bir belirteç yok komple div içindeki p taglarını baz alıcak
+      <p>bu kalın olacak</p>
+      <p>bu normal olacak</p>
+      <p>bu kırmızı olacak</p>
+    </div>-->
+    <!-- <ul>
+      <li>1. Öğe</li>
+      <li>2. Öğe</li>
+      <li>3. Öğe</li>
+      <li>4. Öğe</li>
+    </ul>-->
+    <!-- <button>üzerine gel</button>
+    <input type="text" placeholder="tıklayınca mavi olacak" />-->
+    <!--<h2>başlık</h2>-->
+    <p>gri olacak</p>
+    <p class="special">bu etkilenmez</p>
+  </body>
+</html>
