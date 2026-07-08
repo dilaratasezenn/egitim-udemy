@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS dersleri Temel Seçiciler</title>
+    <style>
+      /*yıldız işareti ile css de tüm sayfayı işaretlemiş olurum */
+      /* * {
+        background-color: red;
+      }*/
+
+      /*sadece h2 yazıp parantez açarak h2 ye zemin rengini kırmızı verdim aynı şekilde h4 de*/
+      /* h2{
+        background-color: red;
+      }
+      h4{
+        background-color: red;
+      } */
+      h4,
+      h2 {
+        background-color: blue;
+      } /* bu şekilde h2,h4 yaparak iki seçiciyede aynı zemin rengi verilebilir*/
+      /* p {
+        background-color: red;
+      } paragraflar için zemin rengi kırmızı dedik iki paragrafında rengi kırmızı oldu*/
+      #paragrafim {
+        background-color: red;
+      } /*ben sadece ilk paragrafın zemin rengini kırmızı istersem o paragrafın id sini isimlendiririm paragrafim diye ve onun içinde zemin rengi veririm bunu id ile yaptığımız için seçicinin başına '#' bu işareti koyarak seçiciyi belirttim*/
+      .paragrafim {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>benim başlığım</h2>
+    <p id="paragrafim" class="paragrafim">
+      <!--id ile class aynı isim verdik css de bu çakışmaz çünkü id seçicisi '#' iken class ın seçicisi '.' nokta işareti ile css de .paragrafim diyerek belli ederiz-->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem
+      libero veniam porro, velit id minus ullam sunt et repellendus. Rem,
+      distinctio ratione. Cupiditate voluptate nisi delectus et. Ratione,
+      maiores?
+    </p>
+    <h4>alt başlık</h4>
+    <p class="paragrafim0">
+      <!--bu paragrafında fontunun 20px olmasını istersem class seçicisini burayada yazarak istediğim gibi değişiklik gösterebilirim-->
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, modi
+      quos ipsam iste praesentium iusto nobis? Error fuga numquam, commodi
+      quaerat doloremque fugiat rem quibusdam facere fugit quo est consequatur!
+    </p>
+  </body>
+</html>
+<!--id leri tek sefer kullanılır birinin id sine paragrafim dersem diğerine başliğim derim ama class larda istediğim yerde kullanabilirim id ile class ayıran fark bu  -->
