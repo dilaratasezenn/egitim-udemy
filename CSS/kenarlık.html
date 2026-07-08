@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS dersleri kenarlık</title>
+    <style>
+      /*deneme kutumun etrafında bir çizgi oluşur  2px diyerek kalınlığını verdik solid diyerek düz bir çizgi verdik ve renk verdik solid yerine dashed diyebiliriz kesik çizgiler oluşur dotted nokta nokta bir çerçeve oluşturur kenarlıklarla double var çift çizgi groove dışa kabartmalı gibi görünür ridge de içe doğru kabartma*/
+
+      div {
+        border: 5px solid blue;
+        border-top: 5px solid rgb(117, 102, 115);
+        border-bottom: 5px solid rgb(144, 62, 98);
+        border-left: 5px solid rgb(43, 183, 80);
+        border-right: 5px solid rgb(224, 243, 81);
+
+        border-radius: 10px; /*bu kenarları yumuşatarak oval bir hal almasını sağlar*/
+      }
+      /* border top left bottom gibi ifadelerle çerçevenin üst kısmı alt kısmı sağı gibi kenarlıklara  renk  verilebilir*/
+    </style>
+  </head>
+  <body>
+    <div>deneme kutu</div>
+  </body>
+</html>
