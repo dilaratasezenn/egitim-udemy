@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS dersleri Kombinatör Seçiciler</title>
+    <style>
+      /* div p {
+        /*div p diyerek div içindeki tüm paragrafın zemin rengi yeşil olur
+        background-color: green;
+      } */
+      /* div > p {
+        divin altındaki çocuğu seç demek section içindeki paragraf bu yüzden etkilenmez section torunu gibi düşünülebilir
+        background-color: blue;
+      } */
+
+      /* h1 + p {
+       h1 altında paragraf var ve bunlar alt alta olduğu için komşu olmuş oldu bunuda css de h1+p diğerek h1 komşusunun zemin rengini turuncu yap dedik
+        background-color: orange;
+      }*/
+      h1 ~ p {
+        /*h1 in tüm p olan komşularını seç dediğimizde AltGr+ü ile '~' bu işaret yazılarak tüm komşularından p olanları seçer bu işarete genelde tilda denir*/
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <p>bu yazı yeşil olacak</p>
+    </div>-->
+    <!-- <div>
+      <p>bu mavi olur</p>
+      <section><p>bu etkilenmez</p></section>
+    </div>-->
+    <!-- <h1>başlık</h1>
+    <p>bu yazı turuncu olur</p>
+    <p>bu etkilenmez</p>-->
+    <h1>başlık</h1>
+    <p>bu yazı mor olur</p>
+    <p>bu da mor olur</p>
+  </body>
+</html>
